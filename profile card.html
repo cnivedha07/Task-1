@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Profile Card</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <style>
+            body{
+                 margin:0;
+                 display:flex;
+                 justify-content:center;
+                 align-items:center;
+                 min-height:100vh;
+                 font-family:Arial, Helvetica, sans-serif;
+                 background-image:url("https://png.pngtree.com/thumb_back/fh260/background/20250205/pngtree-soft-pastel-floral-design-light-blue-background-image_16896113.jpg");
+                 background-size:cover;
+                 background-repeat:no-repeat;
+                 background-position:center;
+            }
+            .card{
+                position:relative;
+                width:90%;
+                max-width:380px;
+                background:rgb(243, 176, 188);
+                border-radius:30px;
+                padding:20px;
+                margin:1px;
+                overflow:hidden;
+            }
+            .cover{
+                height:120px;
+                background-image:url("https://static.vecteezy.com/system/resources/thumbnails/049/976/216/small/university-graduation-hat-diploma-on-simple-background-study-year-academic-success-student-achievement-celebration-college-cap-academy-bachelor-master-degree-phd-award-study-studying-photo.jpg");
+                border-radius:7px;
+                background-size:cover;
+                background-repeat:no-repeat;
+                background-position:center;
+                overflow:hidden;
+            }
+            .profile{
+                position:absolute;
+                height:80px;
+                width:80px;
+                border-radius:50%;
+                top:85px;
+                left:310px;
+                object-fit:cover;
+                transition:transform 0.3s ease;
+            }
+            .profile:hover{
+                cursor:pointer;
+                transform:scale(1.2);
+            }
+            .linkedin{
+              height:50px;
+              width:50px;
+              border-radius:10px;
+              margin-left:130px;
+              object-fit:cover;
+              cursor:pointer;
+}     
+.linkedin:hover{
+    transform:scale(1.1);
+}
+.instagram{
+              height:50px;
+              width:50px;
+              border-radius:10px;
+              margin-left:0px;
+              object-fit:cover;
+              cursor:pointer;
+}     
+.instagram:hover{
+    transform:scale(1.1);
+}
+.btn{
+    position:absolute;
+    background-color:rgb(31, 113, 227) ;
+    color:white;
+    border:none;
+    font-size:12px;
+    border-radius:15px;
+    cursor:pointer;
+    right:40px;
+    top:170px;
+    padding:6px 8px;
+}
+.btn:hover{
+    background-color: rgb(141, 141, 201);
+}
+footer{
+    text-align:center;
+    font-size:15px;
+    font-family:'Times New Roman', Times, serif;
+}
+        </style>
+    </head>
+    <body>
+        <div class="card">
+            <div class="cover"></div>
+             <img class="profile" src="nivedha.jpg" alt="profile photo"></img>
+                <div class="content">
+                   <h3>Nivedha C</h3>
+                    <p><span style="font-size:14px;">AIML Student at BIT,
+                      Pasionate about Machine Learning.</span></p>
+                    <p><a  href="https://www.linkedin.com/in/nivedha-c-b9a2b8380?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank">
+                        <img class="linkedin" src="linkedin.png" alt="linkedin"></img>
+                    </a>
+                    <a  href="https://www.instagram.com/n_nive_nn?igsh=MXY1NWgzbXhxY2E2eQ==" target="_blank">
+                        <img class="instagram" src="insta.png" alt="instagram"></img>
+                    </a><br>
+                    
+                     </p>
+                     <footer>Click to connect through</footer>
+               </div>
+               <button class="btn" onclick="alert('Connect?')">Connect</button>
+        </div>
+        
+    </body>
+</html>
